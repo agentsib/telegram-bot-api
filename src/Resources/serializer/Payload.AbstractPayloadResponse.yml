@@ -1,0 +1,10 @@
+AgentSIB\Telegram\Payload\AbstractPayloadResponse:
+    properties:
+        ok:
+            type: boolean
+        error:
+            type: string
+        error_code:
+            type: integer
+        description:
+            type: string

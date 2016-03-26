@@ -1,0 +1,10 @@
+AgentSIB\Telegram\Model\User:
+    properties:
+        id:
+            type: integer
+        firstName:
+            type: string
+        lastName:
+            type: string
+        username:
+            type: string
