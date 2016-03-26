@@ -19,12 +19,23 @@ abstract class AbstractInlineQueryResult extends AbstractModel
     /** @var  string */
     protected $id;
 
+    /** @var  boolean */
+    protected $disableWebPagePreview;
+
     /**
      * @return string Unique identifier for this result, 1-64 bytes
      */
     public function getId ()
     {
         return $this->id;
+    }
+
+    /**
+     * @return boolean  Optional. Disables link previews for links in the sent message
+     */
+    public function isDisableWebPagePreview ()
+    {
+        return $this->disableWebPagePreview;
     }
 
     /**

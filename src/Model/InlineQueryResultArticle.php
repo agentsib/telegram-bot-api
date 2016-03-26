@@ -19,9 +19,6 @@ class InlineQueryResultArticle extends AbstractInlineQueryResult
     /** @var  string */
     protected $parseMode;
 
-    /** @var  boolean */
-    protected $disableWebPagePreview;
-
     /** @var  string */
     protected $url;
 
@@ -62,14 +59,6 @@ class InlineQueryResultArticle extends AbstractInlineQueryResult
     public function getParseMode ()
     {
         return $this->parseMode;
-    }
-
-    /**
-     * @return boolean Optional. Disables link previews for links in the sent message
-     */
-    public function isDisableWebPagePreview ()
-    {
-        return $this->disableWebPagePreview;
     }
 
     /**

@@ -37,9 +37,6 @@ class InlineQueryResultPhoto extends AbstractInlineQueryResult
     /** @var  string */
     protected $parseMode;
 
-    /** @var  boolean */
-    protected $disableWebPagePreview;
-
     /**
      * @return string A valid URL of the photo. Photo must be in jpeg format. Photo size must not exceed 5MB
      */
@@ -110,14 +107,6 @@ class InlineQueryResultPhoto extends AbstractInlineQueryResult
     public function getParseMode ()
     {
         return $this->parseMode;
-    }
-
-    /**
-     * @return boolean Optional. Disables link previews for links in the sent message
-     */
-    public function isDisableWebPagePreview ()
-    {
-        return $this->disableWebPagePreview;
     }
 
     /**

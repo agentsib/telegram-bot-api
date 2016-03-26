@@ -36,9 +36,6 @@ class InlineQueryResultMpeg4Gif extends AbstractInlineQueryResult
     /** @var  string */
     protected $parseMode;
 
-    /** @var  boolean */
-    protected $disableWebPagePreview;
-
     /**
      * @return string A valid URL for the MP4 file. File size must not exceed 1MB
      */
@@ -101,14 +98,6 @@ class InlineQueryResultMpeg4Gif extends AbstractInlineQueryResult
     public function getParseMode ()
     {
         return $this->parseMode;
-    }
-
-    /**
-     * @return boolean Optional. Disables link previews for links in the sent message
-     */
-    public function isDisableWebPagePreview ()
-    {
-        return $this->disableWebPagePreview;
     }
 
     /**
