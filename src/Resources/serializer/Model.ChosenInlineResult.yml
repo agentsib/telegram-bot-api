@@ -1,0 +1,8 @@
+AgentSIB\Telegram\Model\ChosenInlineResult:
+    properties:
+        resultId:
+            type: string
+        from:
+            type: AgentSIB\Telegram\Model\User
+        query:
+            type: string

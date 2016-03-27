@@ -2,6 +2,7 @@
 
 
 namespace AgentSIB\Telegram\Model;
+use Doctrine\Common\Collections\ArrayCollection;
 
 /**
  * This object represent a user's profile pictures.
@@ -13,7 +14,7 @@ class UserProfilePhotos extends AbstractModel
     /** @var  integer */
     protected $totalCount;
 
-    /** @var  PhotoSize[][] */
+    /** @var  ArrayCollection[]|PhotoSize[][] */
     protected $photos;
 
     /**
@@ -25,7 +26,7 @@ class UserProfilePhotos extends AbstractModel
     }
 
     /**
-     * @return PhotoSize[][] Requested profile pictures (in up to 4 sizes each)
+     * @return ArrayCollection[]|PhotoSize[][] Requested profile pictures (in up to 4 sizes each)
      */
     public function getPhotos ()
     {

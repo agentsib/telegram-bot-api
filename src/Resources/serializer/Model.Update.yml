@@ -1,0 +1,10 @@
+AgentSIB\Telegram\Model\Update:
+    properties:
+        updateId:
+            type: integer
+        message:
+            type: AgentSIB\Telegram\Model\Message
+        inlineQuery:
+            type: AgentSIB\Telegram\Model\InlineQuery
+        chosenInlineResult:
+            type: AgentSIB\Telegram\Model\ChosenInlineResult

@@ -1,0 +1,6 @@
+AgentSIB\Telegram\Model\PhotoSize:
+    properties:
+        width:
+            type: integer
+        height:
+            type: integer

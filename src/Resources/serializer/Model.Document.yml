@@ -1,0 +1,8 @@
+AgentSIB\Telegram\Model\Document:
+    properties:
+        trumb:
+            type: AgentSIB\Telegram\Model\Document
+        fileName:
+            type: string
+        mimeType:
+            type: string

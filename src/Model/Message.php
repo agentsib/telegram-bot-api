@@ -2,6 +2,7 @@
 
 
 namespace AgentSIB\Telegram\Model;
+use Doctrine\Common\Collections\ArrayCollection;
 
 /**
  * This object represents a message.
@@ -11,7 +12,7 @@ namespace AgentSIB\Telegram\Model;
 class Message extends AbstractModel
 {
     /** @var  integer */
-    protected $id;
+    protected $messageId;
 
     /** @var  User */
     protected $from;
@@ -40,7 +41,7 @@ class Message extends AbstractModel
     /** @var  Document */
     protected $document;
 
-    /** @var  PhotoSize[] */
+    /** @var  ArrayCollection|PhotoSize[] */
     protected $photo;
 
     /** @var  Sticker */
@@ -70,20 +71,20 @@ class Message extends AbstractModel
     /** @var  string */
     protected $newChatTitle;
 
-    /** @var  PhotoSize[] */
+    /** @var  ArrayCollection|PhotoSize[] */
     protected $newChatPhoto;
 
     /** @var  boolean */
-    protected $deleteChatPhoto;
+    protected $deleteChatPhoto = false;
 
     /** @var  boolean */
-    protected $groupChatCreated;
+    protected $groupChatCreated = false;
 
     /** @var  boolean */
-    protected $supergroupChatCreated;
+    protected $supergroupChatCreated = false;
 
     /** @var  boolean */
-    protected $channelChatCreated;
+    protected $channelChatCreated = false;
 
     /** @var  integer */
     protected $migrateToChatId;
@@ -94,9 +95,9 @@ class Message extends AbstractModel
     /**
      * @return int Unique message identifier
      */
-    public function getId ()
+    public function getMessageId ()
     {
-        return $this->id;
+        return $this->messageId;
     }
 
     /**
@@ -172,7 +173,7 @@ class Message extends AbstractModel
     }
 
     /**
-     * @return PhotoSize[] Optional. Message is a photo, available sizes of the photo
+     * @return ArrayCollection|PhotoSize[]> Optional. Message is a photo, available sizes of the photo
      */
     public function getPhoto ()
     {
@@ -252,7 +253,7 @@ class Message extends AbstractModel
     }
 
     /**
-     * @return PhotoSize[] Optional. A chat photo was change to this value
+     * @return ArrayCollection|PhotoSize[] Optional. A chat photo was change to this value
      */
     public function getNewChatPhoto ()
     {

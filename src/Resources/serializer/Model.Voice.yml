@@ -1,0 +1,6 @@
+AgentSIB\Telegram\Model\Voice:
+    properties:
+        duration:
+            type: integer
+        mimeType:
+            type: string

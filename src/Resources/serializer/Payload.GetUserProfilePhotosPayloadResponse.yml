@@ -1,0 +1,4 @@
+AgentSIB\Telegram\Payload\GetUserProfilePhotosPayloadResponse:
+    properties:
+        result:
+            type: AgentSIB\Telegram\Model\UserProfilePhotos

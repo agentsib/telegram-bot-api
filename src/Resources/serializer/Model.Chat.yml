@@ -1,0 +1,14 @@
+AgentSIB\Telegram\Model\Chat:
+    properties:
+        id:
+            type: integer
+        type:
+            type: string
+        title:
+            type: string
+        username:
+            type: string
+        firstName:
+            type: string
+        lastName:
+            type: string

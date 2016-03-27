@@ -1,0 +1,6 @@
+AgentSIB\Telegram\Model\AbstractInlineQueryResult:
+    properties:
+        id:
+            type: string
+        disableWebPagePreview:
+            type: boolean

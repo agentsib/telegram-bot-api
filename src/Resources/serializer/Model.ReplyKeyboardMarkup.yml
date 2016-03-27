@@ -1,0 +1,10 @@
+AgentSIB\Telegram\Model\ReplyKeyboardMarkup:
+    properties:
+        keyboard:
+            type: array<array<string>>
+        resizeKeyboard:
+            type: boolean
+        oneTimeKeyboard:
+            type: boolean
+        selective:
+            type: boolean

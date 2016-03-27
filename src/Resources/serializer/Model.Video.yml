@@ -1,0 +1,12 @@
+AgentSIB\Telegram\Model\Video:
+    properties:
+        width:
+            type: integer
+        heigth:
+            type: integer
+        duration:
+            type: integer
+        trumb:
+            type: AgentSIB\Telegram\Model\PhotoSize
+        mimeType:
+            type: string

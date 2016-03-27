@@ -1,4 +1,4 @@
-AgentSIB\Telegram\Payload\getMePayloadResponse:
+AgentSIB\Telegram\Payload\GetMePayloadResponse:
     properties:
         result:
             type: AgentSIB\Telegram\Model\User

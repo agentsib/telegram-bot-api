@@ -1,0 +1,6 @@
+AgentSIB\Telegram\Model\AbstractFile:
+    properties:
+        fileId:
+            type: string
+        fileSize:
+            type: integer

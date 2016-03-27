@@ -1,0 +1,8 @@
+AgentSIB\Telegram\Payload\GetUserProfilePhotosPayload:
+    properties:
+        userId:
+            type: integer
+        offset:
+            type: integer
+        limit:
+            type: integer

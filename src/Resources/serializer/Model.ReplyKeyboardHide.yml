@@ -1,0 +1,6 @@
+AgentSIB\Telegram\Model\ReplyKeyboardHide:
+    properties:
+        hideKeyboard:
+            type: boolean
+        selective:
+            type: boolean

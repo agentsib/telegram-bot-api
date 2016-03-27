@@ -1,0 +1,8 @@
+AgentSIB\Telegram\Model\Sticker:
+    properties:
+        width:
+            type: integer
+        height:
+            type: integer
+        thumb:
+            type: AgentSIB\Telegram\Model\PhotoSize

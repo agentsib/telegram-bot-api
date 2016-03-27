@@ -1,0 +1,8 @@
+AgentSIB\Telegram\Payload\GetUpdatesPayload:
+    properties:
+        offset:
+            type: integer
+        limit:
+            type: integer
+        timeout:
+            type: integer

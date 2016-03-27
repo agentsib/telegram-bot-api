@@ -1,0 +1,4 @@
+AgentSIB\Telegram\Payload\GetUpdatesPayloadResponse:
+    properties:
+        result:
+            type: ArrayCollection<AgentSIB\Telegram\Model\Update>

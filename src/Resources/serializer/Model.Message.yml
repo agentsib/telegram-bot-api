@@ -1,0 +1,56 @@
+AgentSIB\Telegram\Model\Message:
+    properties:
+        messageId:
+            type: integer
+        from:
+            type: AgentSIB\Telegram\Model\User
+        date:
+            type: integer
+        chat:
+            type: AgentSIB\Telegram\Model\Chat
+        forwardFrom:
+            type: AgentSIB\Telegram\Model\User
+        forwardDate:
+            type: integer
+        replyToMessage:
+            type: AgentSIB\Telegram\Model\Message
+        text:
+            type: string
+        audio:
+            type: AgentSIB\Telegram\Model\Audio
+        document:
+            type: AgentSIB\Telegram\Model\Document
+        photo:
+            type: ArrayCollection<AgentSIB\Telegram\Model\Photo>
+        sticker:
+            type: AgentSIB\Telegram\Model\Sticker
+        video:
+            type: AgentSIB\Telegram\Model\Video
+        voice:
+            type: AgentSIB\Telegram\Model\Voice
+        caption:
+            type: string
+        contact:
+            type: AgentSIB\Telegram\Model\Contact
+        location:
+            type: AgentSIB\Telegram\Model\Location
+        newChatParticipant:
+            type: AgentSIB\Telegram\Model\User
+        leftChatParticipant:
+            type: AgentSIB\Telegram\Model\User
+        newChatTitle:
+            type: string
+        newChatPhoto:
+            type: ArrayCollection<AgentSIB\Telegram\Model\PhotoSize>
+        deleteChatPhoto:
+            type: boolean
+        groupChatCreated:
+            type: boolean
+        supergroupChatCreated:
+            type: boolean
+        channelChatCreated:
+            type: boolean
+        migrateToChatId:
+            type: integer
+        migrateFromChatId:
+            type: integer

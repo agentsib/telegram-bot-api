@@ -1,0 +1,10 @@
+AgentSIB\Telegram\Model\Contact:
+    properties:
+        phoneNumber:
+            type: string
+        firstName:
+            type: string
+        lastName:
+            type: string
+        userId:
+            type: integer

@@ -1,0 +1,6 @@
+AgentSIB\Telegram\Model\UserProfilePhotos:
+    properties:
+        totalCount:
+            type: integer
+        photos:
+            type: array<ArrayCollection<AgentSIB\Telegram\Model\PhotoSize>>

@@ -1,0 +1,10 @@
+AgentSIB\Telegram\Model\Audio:
+    properties:
+        duration:
+            type: integer
+        perforver:
+            type: string
+        title:
+            type: string
+        mimeType:
+            type: string
