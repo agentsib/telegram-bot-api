@@ -14,4 +14,10 @@ abstract class AbstractPayload implements PayloadInterface
         return sprintf('%sResponse', get_called_class());
     }
 
+    public function getPayloadType ()
+    {
+        return self::TYPE_JSON;
+    }
+
+
 }

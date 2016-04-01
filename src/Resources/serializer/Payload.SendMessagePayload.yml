@@ -1,0 +1,16 @@
+AgentSIB\Telegram\Payload\SendMessagePayload:
+    properties:
+        chatId:
+            type: string
+        test:
+            type: string
+        parseMode:
+            type: string
+        disableWebPagePreview:
+            type: boolean
+        disableNotification:
+            type: boolean
+        replyToMessageId:
+            type: integer
+        replyMarkup:
+            type: string

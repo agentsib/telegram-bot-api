@@ -1,0 +1,4 @@
+AgentSIB\Telegram\Payload\SetWebhookPayloadResponse:
+    properties:
+        result:
+            type: boolean

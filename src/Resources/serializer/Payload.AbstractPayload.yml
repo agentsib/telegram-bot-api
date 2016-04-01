@@ -1,0 +1,5 @@
+AgentSIB\Telegram\Payload\AbstractPayload:
+    virtual_properties:
+        getMethod:
+            type: string
+            serialized_name: method

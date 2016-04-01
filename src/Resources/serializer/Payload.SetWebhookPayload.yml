@@ -1,0 +1,6 @@
+AgentSIB\Telegram\Payload\SetWebhookPayload:
+    properties:
+        url:
+            type: string
+        certificate:
+            type: file
